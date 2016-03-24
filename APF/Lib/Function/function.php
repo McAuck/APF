@@ -34,3 +34,8 @@ function PR($arg)
     var_dump($arg);
     echo "</pre>";
 }
+
+functoin session()
+{
+   session_star();
+}
