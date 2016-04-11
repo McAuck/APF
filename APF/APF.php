@@ -56,11 +56,11 @@ class APF
 	private static function _import_core()
 	{
 		$filesArr = [
-			FUNCTION_PATH . '/function.php';
-			CORE_PATH . '/App.php';
+			FUNCTION_PATH . '/function.php',
+			CORE_PATH . '/App.php'
 		];
 
-		$includeFiles = get_include_files();
+		$includeFiles = get_included_files();
 		foreach ($filesArr as $v) {
 			in_array($v, $includeFiles) || require $v;
 		}
